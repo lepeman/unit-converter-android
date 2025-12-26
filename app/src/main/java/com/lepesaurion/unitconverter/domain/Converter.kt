@@ -4,12 +4,12 @@ package com.lepesaurion.unitconverter.domain;
  * Tipos de conversion disponibles en la aplicación.
  */
 enum class ConvertionType( val displayName: String) {
-    METERS_TO_KILOMETERS("Metros -> Kilometros"),
-    KILOMETERS_TO_METERS("Kilometros -> Metros"),
-    KILOGRAMS_TO_GRAMS("Kilogramos -> Gramos"),
-    GRAMS_TOKILOGRAMS("Gramos -> kilogramos"),
-    CELSIUS_TO_FAHRENHEIT("Celsius -> Fahrenheit"),
-    FAHRENHEIT_TO_CELSIUS("Fahrenheit -> Celsius")
+    METERS_TO_KILOMETERS("Metros ⮕ Kilometros"),
+    KILOMETERS_TO_METERS("Kilometros ⮕ Metros"),
+    KILOGRAMS_TO_GRAMS("Kilogramos ⮕ Gramos"),
+    GRAMS_TOKILOGRAMS("Gramos ⮕ kilogramos"),
+    CELSIUS_TO_FAHRENHEIT("Celsius ⮕ Fahrenheit"),
+    FAHRENHEIT_TO_CELSIUS("Fahrenheit ⮕ Celsius")
 }
 
 /**

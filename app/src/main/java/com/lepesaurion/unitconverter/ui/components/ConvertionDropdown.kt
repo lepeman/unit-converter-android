@@ -28,6 +28,8 @@ fun ConvertionDropdown(
 
     var expanded by remember { mutableStateOf(false) }
 
+
+
     ExposedDropdownMenuBox(
         expanded = expanded,
         onExpandedChange = { expanded = !expanded },
@@ -55,11 +57,11 @@ fun ConvertionDropdown(
             expanded = expanded,
             onDismissRequest = { expanded = false }
         ) {
-            ConvertionType.values().forEach { conversion ->
+            ConvertionType.values().forEach { convertion ->
                 DropdownMenuItem(
-                    text = { Text(conversion.displayName) },
+                    text = { Text(convertion.displayName) },
                     onClick = {
-                        onSelected(conversion)
+                        onSelected(convertion)
                         expanded = false
                     }
                 )
