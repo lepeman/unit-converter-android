@@ -57,7 +57,7 @@ fun ConvertionDropdown(
             expanded = expanded,
             onDismissRequest = { expanded = false }
         ) {
-            ConvertionType.values().forEach { convertion ->
+            ConvertionType.entries.forEach { convertion ->
                 DropdownMenuItem(
                     text = { Text(convertion.displayName) },
                     onClick = {

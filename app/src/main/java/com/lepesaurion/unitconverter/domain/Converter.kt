@@ -1,4 +1,4 @@
-package com.lepesaurion.unitconverter.domain;
+package com.lepesaurion.unitconverter.domain
 
 /**
  * Tipos de conversion disponibles en la aplicación.
