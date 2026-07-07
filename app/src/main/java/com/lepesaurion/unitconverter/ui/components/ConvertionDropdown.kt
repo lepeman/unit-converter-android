@@ -16,7 +16,9 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import com.lepesaurion.unitconverter.domain.ConvertionType
+import com.lepesaurion.unitconverter.ui.theme.UnitConverterTheme
 
 @Composable
 @OptIn(ExperimentalMaterial3Api::class)
@@ -65,5 +67,16 @@ fun ConvertionDropdown(
                 )
             }
         }
+    }
+}
+
+@Composable
+@Preview(showBackground = true)
+fun ConvertionDropdownPreview() {
+    UnitConverterTheme {
+        ConvertionDropdown(
+            selected = ConvertionType.METERS_TO_KILOMETERS,
+            onSelected = {}
+        )
     }
 }

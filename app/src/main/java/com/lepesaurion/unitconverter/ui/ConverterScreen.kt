@@ -21,6 +21,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.lepesaurion.unitconverter.domain.ConvertionType
 import com.lepesaurion.unitconverter.domain.Converter
@@ -89,4 +90,10 @@ fun ConverterScreen() {
             }
         }
     }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun ConverterScreenPreview() {
+    ConverterScreen()
 }
